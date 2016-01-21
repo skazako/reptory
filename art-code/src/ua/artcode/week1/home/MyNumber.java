@@ -40,7 +40,22 @@ public class MyNumber {// Calculator
     	res *= i;
     	return res;
     }
-     
+    public MyNumber rest(MyNumber other){
+        return new MyNumber(this.value % other.value);
+    }
+
+    public String compare (MyNumber other){
+        if (this.value > other.value)
+            return this.value + " is bigger than " + other.value;
+        if (this.value < other.value)
+            return other.value + " is bigger than " + this.value;
+        return other.value + " equals " + this.value;
+    }
+
+    public double getValue() {
+        return value;
+    }
+
     // to check with Serhii
     /*
      * 
@@ -65,13 +80,7 @@ public class MyNumber {// Calculator
     }
     */
 
-    public MyNumber rest(MyNumber other){
-    	return new MyNumber(this.value % other.value);
-    }
-    
-	public double getValue() {
-        return value;
-    }
+
     
 }
 
