@@ -53,4 +53,5 @@ public class Address {
         return String.format("country:%s,city:%s,street:%s,houseNum:%d",
                 country,city,street,houseNum);
     }
+
 }
