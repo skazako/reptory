@@ -1,4 +1,4 @@
-package ua.artcode.week2;
+package ua.artcode.week2.University;
 
 /**
  * Created by Sem on 23.01.2016.

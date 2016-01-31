@@ -1,7 +1,6 @@
-package ua.artcode.week2;
+package ua.artcode.week2.University;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 
 /**
