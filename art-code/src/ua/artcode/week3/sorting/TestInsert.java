@@ -1,9 +1,11 @@
 package ua.artcode.week3.sorting;
+
 import java.util.Arrays;
+
 /**
- * Created by Sem on 04.02.2016.
+ * Created by Sem on 05.02.2016.
  */
-public class TestSelect {
+public class TestInsert {
     public static void main(String[] args) {
         int[] arr = new int[10];
         arr[0] = 3;
@@ -18,11 +20,9 @@ public class TestSelect {
         arr[9] = 1;
 
         long start = System.currentTimeMillis();
-        Select.sortSelect(arr);
+        Insert.sortInsert(arr);
         long time = System.currentTimeMillis() - start;
         System.out.println (Arrays.toString(arr).equals("[0, 1, 3, 8, 12, 18, 21, 26, 28, 33]") + " " + Arrays.toString(arr) + " Sorted") ;
         System.out.println("Operation took " + time + "ms");
     }
-
-
 }

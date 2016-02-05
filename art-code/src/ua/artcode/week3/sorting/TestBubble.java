@@ -19,8 +19,11 @@ public class TestBubble {
         arr[8] = 21;
         arr[9] = 1;
 
+        long start = System.currentTimeMillis();
         Bubble.sortBubble(arr);
+        long time = System.currentTimeMillis() - start;
         System.out.println (Arrays.toString(arr).equals("[0, 1, 3, 8, 12, 18, 21, 26, 28, 33]") + " " + Arrays.toString(arr) + " Sorted") ;
+        System.out.println("Operation took " + time + "ms");
     }
 }
 
